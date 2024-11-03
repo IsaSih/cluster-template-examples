@@ -33,7 +33,7 @@ questions:
   type: enum
   required: true
   options:
-  - v1.21.6+rke2r1
+  - v1.31.1+rke2r1
   - v1.21.7+rke2r1
   - v1.21.8+rke2r1
   - v1.21.9+rke2r1
@@ -61,7 +61,7 @@ questions:
     type: multiline
     group: "Auth Access Endpoint"
 - variable: monitoring.enabled
-  default: false
+  default: true
   label: "Enable monitoring"
   description: "Enable monitoring"
   type: boolean
