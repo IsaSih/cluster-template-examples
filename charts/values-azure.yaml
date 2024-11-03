@@ -9,7 +9,7 @@ nodepools:
   worker: true
 
   # specify node labels
-  labels: {}
+  labels: {"joinha": "pipopoporopo"}
 
   # specify node taints
   taints: {}
@@ -21,7 +21,7 @@ nodepools:
   paused: false
 
   # specify displayName
-  # displayName: ""
+  displayName: "pool1"
 
   # specify rolling update mechanism
   # rollingUpdate:
@@ -57,13 +57,13 @@ nodepools:
   # machineDeploymentLabels: {}
 
   # specify machineDeployment annotations
-  # machineDeploymentAnnotations: {}
+  machineDeploymentAnnotations: {"annotation": "annotation-value"}
 
   # specify nodepool name
   name: azure-nodepool-1
 
   # Azure Availability Set to place the virtual machine into
-  # availabilitySet: docker-machine
+  availabilitySet: docker-machine
 
   # Azure Service Principal Account ID (optional, browser auth is used if not specified)
   # clientId: ""
@@ -78,16 +78,16 @@ nodepools:
   # dns: ""
 
   # Azure environment (e.g. AzurePublicCloud, AzureChinaCloud)
-  # environment: AzurePublicCloud
+  environment: AzurePublicCloud
 
   # Fault domain count to use for availability set
-  # faultDomainCount: 3
+  faultDomainCount: 3
 
   # Azure virtual machine OS image
-  # image: "canonical:UbuntuServer:18.04-LTS:latest"
+  image: "canonical:UbuntuServer:18.04-LTS:latest"
 
   # Azure region to create the virtual machine
-  # location: westus
+  location: westus
 
   # Configures VM and availability set for managed disks
   # managedDisks: false
@@ -105,10 +105,10 @@ nodepools:
   # resourceGroup: "docker-machine"
 
   # Size for Azure Virtual Machine
-  # size: Standard_D2_v2
+  size: Standard_D2_v2
 
   # Username for SSH login
-  # sshUser: docker-user
+  sshUser: docker-user
 
   # Assign a static public IP address to the machine
   # staticPublicIp: false
